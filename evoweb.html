@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVOWEB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .carousel {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .productos {
+            text-align: center;
+            padding: 50px 20px;
+            background: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .servicio {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .resenas {
+            background: #e3e3e3;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .redes a {
+            color: #00c6ff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            header {
+                font-size: 20px;
+                padding: 15px;
+            }
+            .servicio {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>EVOWEB</h1>
+    </header>
+
+    <!-- Sección 1: Carrusel -->
+    <section class="carousel">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img1.jpg" alt="Imagen 1"></div>
+                <div class="swiper-slide"><img src="img2.jpg" alt="Imagen 2"></div>
+                <div class="swiper-slide"><img src="img3.jpg" alt="Imagen 3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Productos -->
+    <section class="productos">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicio">
+            <h3>Página Web Básica</h3>
+            <p>Ideal para negocios pequeños, portafolios y freelancers.</p>
+        </div>
+        <div class="servicio">
+            <h3>Página Web Corporativa</h3>
+            <p>Diseño profesional con múltiples páginas y SEO optimizado.</p>
+        </div>
+        <div class="servicio">
+            <h3>Página Web Avanzada</h3>
+            <p>Funciones interactivas, integración con APIs y más.</p>
+        </div>
+    </section>
+
+    <!-- Sección 3: Reseñas -->
+    <section class="resenas">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <blockquote>"Excelente servicio, mi web luce increíble!"</blockquote>
+        <blockquote>"Muy profesionales y rápidos en la entrega."</blockquote>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contacto: evoweb@gmail.com | Tel: +593 995 306 723</p>
+        <p>Derechos Reservados © 2024 - Tu Empresa</p>
+        <div class="redes">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+        });
+    </script>
+</body>
+</html>
